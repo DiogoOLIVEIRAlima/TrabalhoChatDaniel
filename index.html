@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conectar ao Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main-content">
+        <h1>Se Conectar no Chat</h1>
+        <button id="open-modal-btn">Entrar no Chat</button>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Digite seu nome</h2>
+            <input type="text" id="username-input" placeholder="Seu nome">
+            <button id="confirm-btn">Confirmar</button>
+        </div>
+    </div>
+
+    <!-- Chat -->
+    <div id="chat" class="hidden">
+        <div id="chat-box">
+            <div id="messages"></div>
+        </div>
+        <input type="text" id="message-input" placeholder="Escreva sua mensagem">
+        <button id="send-btn">Enviar</button>
+        <button id="exit-button">Sair</button>
+    </div>
+
+    <div id="user-list" class="user-list hidden">
+        <h3>Usuários Conectados</h3>
+        <ul id="users"></ul>
+    </div>
+    
+
+    <script src="cliente.js"></script>
+</body>
+</html>
