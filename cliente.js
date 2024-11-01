@@ -1,4 +1,3 @@
-// WebSocket connection
 const ws = new WebSocket('ws://localhost:8080');
 
 let typingTimeout;
@@ -80,7 +79,6 @@ messageInput.addEventListener('input', () => {
     }
 });
 
-// Recebendo mensagens do servidor
 ws.onmessage = function(event) {
     const data = JSON.parse(event.data);
 

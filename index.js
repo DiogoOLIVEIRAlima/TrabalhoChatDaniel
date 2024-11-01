@@ -89,7 +89,7 @@ function mandarMensagem(data) {
 function atualizarListaUsuarios() {
   mandarMensagem(JSON.stringify({
     type: 'user-list',
-    users: Array.from(connectedUsers) // Converte o Set para uma Array
+    users: Array.from(connectedUsers)
   }));
 }
 
